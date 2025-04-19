@@ -1,12 +1,11 @@
 <?php
-// Incluindo a conexão
+
 include("conexao.php");
 
 
 // fazendo a busca no banco
 $sql = "SELECT * FROM usuario";
-//Variável result responsável por trazer os dados do banco para
-// Interface do usuário
+
 $result = mysqli_query($conexao, $sql);
 ?>
 
@@ -28,8 +27,8 @@ $result = mysqli_query($conexao, $sql);
       <?php while($row = mysqli_fetch_assoc($result)) { ?>
         <tr>
         
-        <td><?php echo $row['datadenascimento']; ?></td>
-        <td><?php echo $row['nomedousuario']; ?></td>
+        <td><?php echo $row['drnasc']; ?></td>
+        <td><?php echo $row['nusuario']; ?></td>
           <td><?php echo $row['email']; ?></td>
         </tr>
       <?php } ?>
