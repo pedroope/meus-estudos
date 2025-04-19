@@ -6,7 +6,12 @@ $dtnasc= $_POST['datanascimento'] ;
 $email= $_POST['email'];
 $senha= $_POST['senha'] ;
 
-
+// crete table usuario (
+// idusu int primary key auto increment
+// nusuario varchar(100) not null,
+// dtnasc varchar(100),
+// email varchar(100) not null,
+// senha vachar (20));
 
 
 $sql = "INSERT INTO usuario (nusuario,dtnasc,email,senha  )
