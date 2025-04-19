@@ -1,16 +1,16 @@
 <?php
 include("conexao.php");
 
-$nomeusuario=$_POST['nomeusuario'] ;
-$datanascimento= $_POST['datanascimento'] ;
+$nusuario=$_POST['nomeusuario'] ;
+$dtnasc= $_POST['datanascimento'] ;
 $email= $_POST['email'];
 $senha= $_POST['senha'] ;
 
 
 
 
-$sql = "INSERT INTO usuario (nomeusuario,datanascimento, email, senha,  )
-values ('$nomeusuario','$datanascimento','$email' , '$senha',)";
+$sql = "INSERT INTO usuario (nusuario,dtnasc,email,senha  )
+values ('$nusuario','$dtnasc','$email' , '$senha',)";
 
 
 if(mysqli_query($conexao , $sql)){
