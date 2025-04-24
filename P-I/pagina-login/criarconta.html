@@ -8,31 +8,32 @@
 </head>
 <body>
      
-<form action="cadastro.php" method="POST">
+    <form action="cadastro.php" method="POST">
   
-  <div class="cadastro-container">
-    <div class="cadastro-box">
-      <h1><span class="azul">AQUA</span> <span class="verde">LIMPA</span></h1>
-
-
-
-      <label for="nome">NOME DO USUÁRIO</label>
-      <input type="text" id="nusuario" placeholder="Insira seu texto" required>
-
-      <label for="data">DATA DE NASCIMENTO</label>
-      <input type="date" id="dtnasc" required>
-
-      <label for="email">EMAIL</label>
-      <input type="email" id="email" placeholder="Insira seu texto" required>
-
-      <label for="senha">SENHA</label>
-      <input type="password" id="senha" placeholder="Insira seu texto" required>
-
-
-
+        <div class="cadastro-container">
+          <div class="cadastro-box">
+            <h1><span class="azul">AQUA</span> <span class="verde">LIMPA</span></h1>
       
-      <button class="btn-cadastrar">Cadastrar</button>
-    </div>
-  </div>
+            
+            <label for="NomeDoUsuario">Nome do Usuário</label>
+            <input type="text" id="NomeDoUsuario" name="Nome_usuario" placeholder="Insira seu nome" required>
+      
+            
+            <label for="dataDeNascimento">Data de Nascimento:* </label>
+            <input type="date" id="dataDeNascimento" name="datanascimento" required>
+      
+          
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Insira seu email" required>
+      
+            
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Insira sua senha" required>
+      
+           
+            <button type="submit" class="btn-cadastrar">Enviar</button>
+          </div>
+        </div>
+      </form>
 </body>
 </html>
