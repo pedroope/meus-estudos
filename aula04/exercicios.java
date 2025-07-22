@@ -9,7 +9,7 @@ public class exercicios {
 		
 		
 		
-		for (int i = 0; i < turma.length; i++) {
+		for (int i = 0; i < turma.getTamanho(); i++) {
 			
 			System.out.println("Escreva Nome do Aluno" + (i+1) + ":" );
 			String nome = scanner.nextLine();
@@ -30,8 +30,7 @@ public class exercicios {
 		}
 		
 		}
-	}
-
+	
 
 class Aluno {
 	String nome;
@@ -66,9 +65,16 @@ class TestarArrayAluno  {
 		System.out.println("Média dos alunos");
 		for (Aluno aluno : turma) {
 		if (aluno != null) {
-			System.out.println("Nome: "+ aluno.nome +"Média"+ aluno.CalcularMedia());
+			System.out.println("Nome: "+ aluno.nome +" -- Média:"+ aluno.CalcularMedia());
 		}
+	
 		}
+		
+		}
+	  public int getTamanho() {
+	        return turma.length;
+	    }
 	}
-	}
+
+	
 
